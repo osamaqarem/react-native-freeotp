@@ -28,7 +28,7 @@ import FreeOtp from 'react-native-freeotp';
 const tokenPair = await FreeOtp.getTokenPair(totpUrl);
 ```
 
-## Props
+## Types
 
 Result:
 
