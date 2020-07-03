@@ -1,6 +1,6 @@
 # react-native-freeotp
 
-Generates the same TOTP tokens as [FreeOTP](https://freeotp.github.io/) from your React Native app.
+Native module for generating the same TOTP tokens as [FreeOTP](https://freeotp.github.io/) from your React Native app.
 
 ## Installation
 
@@ -16,7 +16,9 @@ Rebuild the app.
 
 Install the pod, then rebuild the app.
 
-`npx pod-install`
+```sh
+npx pod-install
+```
 
 ## Usage
 
