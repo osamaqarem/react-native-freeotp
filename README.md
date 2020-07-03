@@ -21,11 +21,9 @@ Install the pod, then rebuild the app.
 ## Usage
 
 ```js
-import Freeotp from 'react-native-freeotp';
+import FreeOtp from 'react-native-freeotp';
 
-// ...
-
-const result = await Freeotp.multiply(3, 7);
+const tokenPair = await FreeOtp.getTokenPair(totpUrl);
 ```
 
 ## Props

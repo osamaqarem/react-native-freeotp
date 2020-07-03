@@ -19,10 +19,10 @@ type TokenPair = {
   tokenTwoExpires: string;
 };
 
-type FreeotpType = {
+type FreeOtpType = {
   getTokenPair: (url: string) => Promise<TokenPair>;
 };
 
 const { FreeOtp } = NativeModules;
 
-export default FreeOtp as FreeotpType;
+export default FreeOtp as FreeOtpType;
