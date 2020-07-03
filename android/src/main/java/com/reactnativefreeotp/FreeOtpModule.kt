@@ -9,7 +9,7 @@ import com.reactnativefreeotp.core.TokenCode
 class FreeOtpModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
   override fun getName(): String {
-    return "Freeotp"
+    return "FreeOtp"
   }
 
   @ReactMethod

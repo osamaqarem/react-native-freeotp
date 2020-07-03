@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "react-native-freeotp": "0.1.4"
+    "react-native-freeotp": "^0.1.5"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

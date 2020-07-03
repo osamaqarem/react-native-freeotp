@@ -4915,10 +4915,10 @@ react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-native-freeotp@0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/react-native-freeotp/-/react-native-freeotp-0.1.3.tgz#28f3958afb72541718eeb940c4619e3554941dc7"
-  integrity sha512-HSGqUObIXcgj3yg2S5bATCMB7M5Ng4TWfy8kNRZtv3kLORFz8Tz2XGo07spnCOSw++0RLXDUC6hI/uGf6cWqjA==
+react-native-freeotp@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/react-native-freeotp/-/react-native-freeotp-0.1.4.tgz#07eeff7d632d52c03aedec7da3bb7cfdf4a11446"
+  integrity sha512-+Nz0V/K8s5OsWaQR8HSjg7ULCXetMqE/+JyNNWXyX9pNmJcQhYWh3MUvNDfhAZSUmMRC3BT4UbzySNCjrzRcjw==
 
 react-native@0.62.2:
   version "0.62.2"
