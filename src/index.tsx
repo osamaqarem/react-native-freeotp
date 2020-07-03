@@ -1,9 +1,28 @@
 import { NativeModules } from 'react-native';
 
-type FreeotpType = {
-  multiply(a: number, b: number): Promise<number>;
+type TokenPair = {
+  /**
+   * Current token.
+   */
+  tokenOne: string;
+  /**
+   * Next period step token.
+   */
+  tokenTwo: string;
+  /**
+   * Seconds until expiry of the current token.
+   */
+  tokenOneExpires: string;
+  /**
+   * Seconds until expiry of the next token.
+   */
+  tokenTwoExpires: string;
 };
 
-const { Freeotp } = NativeModules;
+type FreeotpType = {
+  getTokenPair: (url: string) => Promise<TokenPair>;
+};
 
-export default Freeotp as FreeotpType;
+const { FreeOtp } = NativeModules;
+
+export default FreeOtp as FreeotpType;

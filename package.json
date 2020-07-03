@@ -1,7 +1,7 @@
 {
   "name": "react-native-freeotp",
   "version": "0.1.0",
-  "description": "Generates the same TOTPs as FreeOTP from your React Native app.",
+  "description": "Generates the same TOTP tokens as FreeOTP from your React Native app.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -11,13 +11,7 @@
     "src",
     "lib",
     "android",
-    "ios",
-    "cpp",
-    "react-native-freeotp.podspec",
-    "!lib/typescript/example",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__"
+    "ios"
   ],
   "scripts": {
     "test": "jest",
@@ -32,7 +26,11 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "freeotp",
+    "totp",
+    "generator",
+    "otp"
   ],
   "repository": "https://github.com/osamaq/react-native-freeotp",
   "author": "Osama <osamaqarem@gmail.com> (https://github.com/osamaq)",
@@ -72,12 +70,6 @@
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
-    }
   },
   "commitlint": {
     "extends": [
@@ -119,7 +111,10 @@
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -130,6 +125,10 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }
