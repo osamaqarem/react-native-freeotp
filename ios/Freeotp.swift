@@ -39,7 +39,7 @@ class FreeOtp : NSObject {
                 return
            }
           
-           guard let periodString  = urlc.queryItems?[3].value else {
+           guard let periodString  = urlc.queryItems?.first(where: { $0.name == "period" })?.value else {
                  print("Invalid URL. Missing params")
                  return
            }
