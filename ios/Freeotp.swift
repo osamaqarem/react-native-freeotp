@@ -26,7 +26,13 @@ class FreeOtp : NSObject {
   
     @objc
     func getTokenPair(_ totpUrl : String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock) -> Void{
-        guard let urlc = URLComponents(string: totpUrl) else {
+        guard let encoded = totpUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) else {
+            let error = NSError.init(domain: "Invalid URI: 0", code: -1)
+            reject("Error", "Invalid URI: 0", error)
+            return
+        }
+        
+        guard let urlc = URLComponents(string: encoded) else {
           let error = NSError.init(domain: "Invalid URI: -1", code: -1)
           reject("Error", "Invalid URI: -1", error)
           return
