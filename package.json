@@ -1,6 +1,6 @@
 {
   "name": "react-native-freeotp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native module for generating the same TOTP tokens as FreeOTP from your React Native app.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
